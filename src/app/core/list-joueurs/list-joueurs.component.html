@@ -1,0 +1,23 @@
+<h2>Liste des joueurs</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>--Nom--</th>
+      <th>-Nationalité-</th>
+      <th>Equipe actuelle</th>
+      <th>-Taille-</th>
+      <th>-Droitier-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let joueur of joueurs">
+      <td>{{ joueur.nom }}</td>
+      <td>{{ joueur.nationalite }}</td>
+      <td>{{ joueur.equipe_actuelle}}</td>
+      <td>{{ joueur.taille }}</td>
+      <td>{{ joueur.droitier ? 'Droitier' : 'Gaucher' }}</td>
+    </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,23 @@
+<h2>Liste des Equipes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>--Equipe--</th>
+      <th>-Pays-</th>
+      <th>Titres</th>
+      <th>-Anneé de naissance-</th>
+      <th>-President actuel-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let equipe of equipes">
+      <td>{{ equipe.nom_equipe }}</td>
+      <td>{{ equipe.pays }}</td>
+      <td>{{ equipe.titres}}</td>
+      <td>{{ equipe.annee }}</td>
+      <td>{{ equipe.president }}</td>
+    </tr>
+  </tbody>
+</table>
+
